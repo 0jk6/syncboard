@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Syncboard</string>
+    <string name="result_text">your synced data appears here!</string>
+    <string name="enter_api_key">enter api key</string>
+    <string name="save">Save</string>
+    <string name="copy">Copy</string>
+    <string name="get">get</string>
+    <string name="update">update</string>
+    <string name="instructions_text">Hit GET button to get the synced data, UPDATE to sync the data and you know what COPY button does.</string>
+    <string name="title_text">Enter the api key in the below field and hit save, and the app works like a magic. You don\'t need to enter it next time. If you don\'t have an API key, you can get one at http://syncy.herokuapp.com/register</string>
+</resources>
