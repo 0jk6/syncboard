@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Syncboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/signin">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class='container'>
+            <p class="h1">Welcome to Syncboard, <%= data.username%>!</p>
+            <br>
+          </div>
+
+          <div class='container'>
+              <div class='row'>
+                <div class="col col-md-5">
+                    <div class="card border-success mb-3" style="max-width: 24rem;">
+                        <div class="card-header bg-transparent border-success">
+                          <h5 class="text-info">API info</h5>
+                        </div>
+                        <div class="card-body text-success">
+                        <h5 class="card-title">Your API key</h5>
+                        <p class="card-text" id="apikey"><%=data.apikey %></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <button class="btn btn-dark" onclick="copyToClipboard(document.getElementById('apikey').innerHTML)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-md-5">
+                  <div class="card border-success mb-3" style="max-width: 24rem;">
+                      <div class="card-header bg-transparent border-success">
+                        <h5 class="text-info">Update your clipboard data</h5>
+                      </div>
+                      <div class="card-body text-success">
+                      
+                      <div class="container">
+                        <form action='update' method='POST'>
+                          <div class='form-group'>
+                            <input type='hidden' name="apikey" placeholder="Enter your api key here" value = <%=data.apikey %> class="form-group">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" name="data" placeholder="Enter your clipboard data" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-success">Update</button>
+                          </div>
+                        </form>
+                        </div>
+                      </div>    
+                  </div>
+              </div>
+
+                <div class="col col-md-5">
+                    <div class="card border-success mb-3" style="max-width: 24rem;">
+                        <div class="card-header bg-transparent border-success">Username: <%=data.username %></div>
+                        <div class="card-body text-success">
+                        <h5 class="card-title">Your Clipboard Data</h5>
+                        <p class="card-text" id="clipdata"><%=data.data %></p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <button class="btn btn-dark" onclick="copyToClipboard(document.getElementById('clipdata').innerHTML)">Copy</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  
+            </div>
+          </div>
+
+          
+
+    </body>
+    <script>
+        function copyToClipboard(text) {
+            window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+        }
+    </script>
+</html>
