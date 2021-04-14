@@ -17,13 +17,13 @@ You can hide the console window by renaming ```syncboard.py``` to ```syncboard.p
 
 ## Usage:
 
-First register on https://syncy.herokuapp.com/register, it will give an API key for your account.
+First register on https://syncy.herokuapp.com/register, it will give an ```API key``` for your account.
 
 
-Now, install Syncboard Android App, paste your API key and hit the save button. You don't have to do it again, unless you want to change your API key. Instructions are available on the Android App.
+Now, install the Syncboard Android App, paste your API key and hit the save button. You don't have to do it again, unless you want to change your API key. Instructions are available on the Android App. You can download the app from [Releases](https://github.com/jaychandra6/syncboard/releases/tag/0.1)
 
 
-Install Python 3.8 on your PC and run the following command ```pip install -r requirements.txt``` then run ```python syncboard.py```. It will start a system tray app on your Windows PC, Linux port is coming soon. You can right click and get the synced clipboard data or sync new data.
+Install Python 3.8 on your PC and run the following command ```pip install -r requirements.txt``` then add your ```API key``` to ```key.json``` file and run ```python syncboard.py```. It will start a system tray app on your Windows PC, Linux port is coming soon. You can right click and get the synced clipboard data or sync new data.
 
 
 Copy something and hit ```UPDATE``` button on Android or PC to sync data on to Database. Hit the ```GET``` button and it will automatically copies the synced data on to your device's clipboard. It will only do it, when you tell it to.
