@@ -26,6 +26,9 @@ Now, install Syncboard Android App, paste your API key and hit the save button. 
 Install Python 3.8 on your PC and run the following command ```pip install -r requirements.txt``` then run ```python syncboard.py```. It will start a system tray app on your Windows PC, Linux port is coming soon. You can right click and get the synced clipboard data or sync new data.
 
 
+Copy something and hit ```UPDATE``` button on Android or PC to sync data on to Database. Hit the ```GET``` button and it will automatically copies the synced data on to your device's clipboard. It will only do it, when you tell it to.
+
+
 ## Screenshots
 
 #### Website
@@ -36,5 +39,5 @@ Install Python 3.8 on your PC and run the following command ```pip install -r re
 
 ![img file](https://github.com/jaychandra6/syncboard/blob/main/android_screenshot.jpg)
 
-### PC System Tray Icon
+#### PC System Tray Icon
 ![img file](https://github.com/jaychandra6/syncboard/blob/main/pc_screenshot.PNG)
