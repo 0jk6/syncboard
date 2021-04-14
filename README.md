@@ -13,5 +13,15 @@ You can hide the console window by renaming ```syncboard.py``` to ```syncboard.p
 
 ```Server``` contains the source code for the NodeJS, to use this, use these commands ```cd Server``` then ```npm start```
 
+### Screenshots
+
+#### Website
 
 ![img file](https://github.com/jaychandra6/syncboard/blob/main/screenshot.PNG)
+
+#### Android App
+
+![img file](https://github.com/jaychandra6/syncboard/blob/main/android_screenshot.jpg)
+
+### PC System Tray Icon
+![img file](https://github.com/jaychandra6/syncboard/blob/main/pc_screenshot.PNG)
