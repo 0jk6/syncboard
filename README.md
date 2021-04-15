@@ -11,7 +11,7 @@ You can find more at: https://syncy.herokuapp.com
 You can hide the console window by renaming ```syncboard.py``` to ```syncboard.pyw```.
 
 
-```Server``` contains the source code for the NodeJS, to use this, use these commands ```cd Server``` then ```npm start```
+```Server``` contains the source code for the NodeJS App, to run the server, use these commands ```cd Server``` then ```npm start```. Don't forget to add your MongoDB URI in ```server.js``` at line 17.
 
 
 
